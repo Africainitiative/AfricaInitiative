@@ -1,0 +1,478 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 1em;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li a:hover {
+    color: #ed7818f0;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.hero {
+    position: relative;
+    background: url('../images/hero.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 5em 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    backdrop-filter: blur(0px); /* Blur effect */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1em;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+
+.hero-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.hero-content p {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.vision-mission, .newsletter, .social-media, .news-feed, .latest-updates, .workstreams, .about, .news, .blog, .partnerships, .contact, .gallery {
+    padding: 2em 0;
+    text-align: center;
+}
+
+.workstreams {
+    background-color: #fff;
+}
+
+.workstreams .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust alignment as needed */
+}
+
+.workstream {
+    width: 48%; /* Adjust width to fit two items per row */
+    margin-bottom: 20px; /* Optional: Adjust margin for spacing between items */
+    box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+
+.workstream-icon {
+    width: 200px; /* Example size for icons, adjust as per your design */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 5px; /* Optional: Adjust icon spacing */
+}
+
+.workstreams h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+button {
+    background: #ed7818f0;
+    color: #fff;
+    border: none;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+    min-width: 250px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .footer-links {
+    margin-bottom: 1em;
+}
+
+footer .footer-links a {
+    color: #ed7818f0;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    color: #0056b3;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.social-media ul li a {
+    text-decoration: none;
+    color: #ed7818f0;
+    font-size: 1.5em;
+}
+
+social-media ul li a:hover {
+    color: #0056b3;
+}
+
+.news-feed .news-item, .latest-updates .news-item, .about .team-member, .blog .blog-post, .partnerships .partner {
+    margin-bottom: 2em;
+}
+
+.news-feed .news-item img, .gallery .photo-album img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-feed .news-item h3, .latest-updates .news-item h3, .about .team-member h3, .blog .blog-post h3, .partnerships .partner h3, .gallery h2, .contact h1 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.news-feed .news-item p, .latest-updates .news-item p, .about .team-member p, .blog .blog-post p, .partnerships .partner p, .gallery p, .contact p {
+    font-size: 1em;
+    margin-top: 0.5em;
+}
+
+.news-feed .news-item a, .latest-updates .news-item a, .blog .blog-post a, .about .team-member a, .partnerships .partner a {
+    display: inline-block;
+    margin-top: 0.5em;
+    color: #ed7818f0;
+    text-decoration: none;
+}
+
+.news-feed .news-item a:hover, .latest-updates .news-item a:hover, .blog .blog-post a:hover, .about .team-member a:hover, .partnerships .partner a:hover {
+    color: #0056b3;
+}
+
+.latest-updates ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.latest-updates ul li {
+    margin-bottom: 0.5em;
+    font-size: 1.1em;
+}
+
+.latest-updates ul li a {
+    color: #ed7818f0;
+    text-decoration: none;
+}
+
+.latest-updates ul li a:hover {
+    color: #0056b3;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.contact form label {
+    text-align: left;
+}
+
+.contact form input, .contact form textarea {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.contact form button {
+    width: fit-content;
+    align-self: center;
+}
+
+.gallery .photo-section {
+    margin-bottom: 2em;
+}
+
+.gallery .photo-album {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+}
+
+.gallery .photo-album figure {
+    position: relative;
+    width: 25%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.gallery .photo-album img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery .photo-album figcaption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1em;
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s;
+}
+
+.gallery .photo-album figure:hover img {
+    transform: scale(1.1);
+}
+
+.gallery .video-section {
+    margin-top: 2em;
+}
+
+.gallery .video-collection {
+    margin-bottom: 2em;
+}
+
+.gallery .video-collection h3 {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.gallery .video-collection iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border: none;
+}
+
+.blog {
+    background: #f9f9f9;
+}
+
+.blog h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.blog p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.blog-post {
+    padding: 2em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.blog-post h2 a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.blog-post h2 a:hover {
+    color: #ed7818f0;
+}
+
+.blog-post p {
+    font-size: 1em;
+    line-height: 1.6em;
+}
+
+.blog-post a {
+    color: #ed7818f0;
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    color: #0056b3;
+}
+
+a {
+    color:#ed7818f0 ;
+}
+
+a:hover {
+    color: #0056b3;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about .team-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.about .team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1em;
+}
+
+.about .team-member h3 {
+    margin-bottom: 0.5em;
+    font-size: 1.5em;
+}
+
+.about .team-member p {
+    margin-bottom: 0.5em;
+    font-size: 1em;
+}
+
+.partnerships .partner img {
+    width: 150px; /* Adjust the size as needed */
+    height: auto;
+    display: block;
+    margin: 0 auto 1em;
+}
+
+.partnerships .partner {
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.open {   
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 1em 0;
+    }
+
+    .workstream {
+        width: 100%;
+    }
+
+    .gallery .photo-album figure {
+        width: 100%;
+    }
+}
