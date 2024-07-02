@@ -103,6 +103,51 @@ nav ul li a:hover {
     margin: 0 auto;
 }
 
+.news {
+    background: #f9f9f9;
+    padding: 2em 0;
+    text-align: center;
+}
+
+.news h1 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.news p {
+    font-size: 1.2em;
+    margin-bottom: 2em;
+}
+
+.news-item {
+    padding: 2em;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    margin-bottom: 2em;
+}
+
+.news-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+.news-item p {
+    font-size: 1em;
+    line-height: 1.6em;
+    margin-bottom: 1em;
+}
+
+.news-item a {
+    color: #ed7818f0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.news-item a:hover {
+    color: #0056b3;
+}
 .vision-mission, .newsletter, .social-media, .news-feed, .latest-updates, .workstreams, .about, .news, .blog, .partnerships, .contact, .gallery {
     padding: 2em 0;
     text-align: center;
