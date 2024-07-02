@@ -6,9 +6,6 @@
     <title>Gallery - Africa Initiative</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
 </head>
 <body>
     <header>
@@ -109,30 +106,6 @@
             <p>&copy; 2024 Africa Initiative. All Rights Reserved.</p>
         </div>
     </footer>
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $('.slick-slider').slick({
-            infinite: true,
-            slidesToShow: 3,
-            slidesToScroll: 1,
-            responsive: [
-                {
-                    breakpoint: 768,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                }
-            ]
-        });
-
-        $('.menu-toggle').click(function() {
-            $('nav ul').toggleClass('open');
-        });
-    });
-    </script>
+    <script src="js/main.js"> </script>
 </body>
 </html>
