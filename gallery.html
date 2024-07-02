@@ -3,9 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog - Africa Initiative</title>
+    <title>Gallery - Africa Initiative</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css"/>
 </head>
 <body>
     <header>
@@ -36,16 +39,22 @@
                     <h2>Visits</h2>
                     <div class="photo-album slick-slider">
                         <figure>
-                            <img src="images/photo1.jpg" alt="Visit Photo 1">
-                            <figcaption>ACE-IMPACT's visit to UM6P</figcaption>
+                            <a href="images/photo1.jpg" data-lightbox="visits" data-title="ACE-IMPACT's visit to UM6P">
+                                <img src="images/photo1.jpg" alt="Visit Photo 1">
+                                <figcaption>ACE-IMPACT's visit to UM6P</figcaption>
+                            </a>
                         </figure>
                         <figure>
-                            <img src="images/photo2.jpg" alt="Visit Photo 2">
-                            <figcaption>Discussion with Students</figcaption>
+                            <a href="images/photo2.jpg" data-lightbox="visits" data-title="Discussion with Students">
+                                <img src="images/photo2.jpg" alt="Visit Photo 2">
+                                <figcaption>Discussion with Students</figcaption>
+                            </a>
                         </figure>
                         <figure>
-                            <img src="images/photo3.jpg" alt="Visit Photo 3">
-                            <figcaption>AAU memebers visit 1337</figcaption>
+                            <a href="images/photo3.jpg" data-lightbox="visits" data-title="AAU members visit 1337">
+                                <img src="images/photo3.jpg" alt="Visit Photo 3">
+                                <figcaption>AAU members visit 1337</figcaption>
+                            </a>
                         </figure>
                     </div>
                 </div>
@@ -54,16 +63,22 @@
                     <h2>Events</h2>
                     <div class="photo-album slick-slider">
                         <figure>
-                            <img src="images/photo4.jpg" alt="Event Photo 1">
-                            <figcaption>Annual Conference 2023</figcaption>
+                            <a href="images/photo4.jpg" data-lightbox="events" data-title="Annual Conference 2023">
+                                <img src="images/photo4.jpg" alt="Event Photo 1">
+                                <figcaption>Annual Conference 2023</figcaption>
+                            </a>
                         </figure>
                         <figure>
-                            <img src="images/photo5.jpg" alt="Event Photo 2">
-                            <figcaption>Workshop on Innovation</figcaption>
+                            <a href="images/photo5.jpg" data-lightbox="events" data-title="Workshop on Innovation">
+                                <img src="images/photo5.jpg" alt="Event Photo 2">
+                                <figcaption>Workshop on Innovation</figcaption>
+                            </a>
                         </figure>
                         <figure>
-                            <img src="images/photo6.jpg" alt="Event Photo 3">
-                            <figcaption>Panel Discussion with Experts</figcaption>
+                            <a href="images/photo6.jpg" data-lightbox="events" data-title="Panel Discussion with Experts">
+                                <img src="images/photo6.jpg" alt="Event Photo 3">
+                                <figcaption>Panel Discussion with Experts</figcaption>
+                            </a>
                         </figure>
                     </div>
                 </div>
@@ -71,14 +86,12 @@
                 <div class="video-section">
                     <h2>Video Collection</h2>
                     <div class="video-collection">
-                        <h3>Africa Initiative Overview</h3>
-                        <iframe width="1395" height="462" src="https://youtube.com/embed/AnrjJ7jgAOo" title="UM6P Vision Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <h3>Africa Initiative's Overview</h3>
+                        <iframe width="560" height="315" src="https://youtube.com/embed/AnrjJ7jgAOo" title="UM6P Vision Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                     <div class="video-collection">
                         <h3>UM6P's Vision</h3>
-                       
-                        <iframe width="1395" height="462" src="https://www.youtube.com/embed/CtNEjhyGD2E" title="UM6P Vision Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                   
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/CtNEjhyGD2E" title="UM6P Vision Short" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -98,6 +111,7 @@
     </footer>
     <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
     <script>
     $(document).ready(function(){
         $('.slick-slider').slick({
@@ -113,6 +127,10 @@
                     }
                 }
             ]
+        });
+
+        $('.menu-toggle').click(function() {
+            $('nav ul').toggleClass('open');
         });
     });
     </script>
